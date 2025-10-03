@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Example</title>
+</head>
+<body>
+      <a href="../index.html.html">page 1</a>
+<a href="1page.html.html">page 2</a>
+<a href="2page.html.html">page 3</a>
+<a href="3page.html.html">page 4</a>
+<a href="4page.html.html">page 5</a>
+<a href="5page.html.html">page 5</a>
+<a href="6page.html.html">page 6</a>
+<a href="8page.html.html">page 7</a>
+
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label for="username">Username*</label><br>
+                <input type="text" id="username" name="username" required>
+            </p>
+            <p>
+                <label for="password">Password*</label><br>
+                <input type="password" id="password" name="password" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender*</legend>
+            <p>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Programming Skill</legend>
+            <p>
+                <input type="checkbox" id="java" name="skill" value="java">
+                <label for="java">Java</label>
+                <input type="checkbox" id="cpp" name="skill" value="cpp" checked>
+                <label for="cpp">C++</label>
+                <input type="checkbox" id="csharp" name="skill" value="csharp">
+                <label for="csharp">C#</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Fruit</legend>
+            <p>
+                <label for="fruit">Choose a fruit:</label>
+                <select id="fruit" name="fruit">
+                    <option value="banana">Banana</option>
+                    <option value="apple">Apple</option>
+                    <option value="orange">Orange</option>
+                    <option value="grape">Grape</option>
+                </select>
+            </p>
+        </fieldset>
+        
+        <p>
+            <textarea name="comment" rows="5" cols="40" placeholder="Enter your comment here"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="SEND">
+            <input type="reset" value="RESET">
+        </p>
+
+    </form>
+
+</body>
+</html>

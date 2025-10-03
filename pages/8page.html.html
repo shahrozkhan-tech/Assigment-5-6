@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Registration Form</title>
+</head>
+<body style="margin:0; font-family: Arial, Helvetica, sans-serif; background:#6f47c8; color:#fff;">
+   <a href="../index.html.html">page 1</a>
+<a href="1page.html.html">page 2</a>
+<a href="2page.html.html">page 3</a>
+<a href="3page.html.html">page 4</a>
+<a href="4page.html.html">page 5</a>
+<a href="5page.html.html">page 5</a>
+<a href="6page.html.html">page 6</a>
+<a href="7page.html.html">page 7</a>
+
+  <form style="max-width:900px; margin:24px auto; padding:30px; box-sizing:border-box;">
+    <h2 style="margin:0 0 18px 0; letter-spacing:1px;">APPLICATION FORM</h2>
+
+    <!-- Row: First / Last -->
+    <div style="display:flex; gap:18px; margin-bottom:14px;">
+      <label style="flex:0 0 140px; line-height:36px;">FIRST NAME</label>
+      <input type="text" name="first" maxlength="30" placeholder="" style="flex:1; height:30px; border:0; padding:6px; border-radius:3px;" />
+      <label style="flex:0 0 140px; line-height:36px; margin-left:10px;">LAST NAME</label>
+      <input type="text" name="last" maxlength="30" placeholder="" style="flex:1; height:30px; border:0; padding:6px; border-radius:3px;" />
+    </div>
+
+    <!-- DOB -->
+    <div style="display:flex; align-items:center; gap:12px; margin-bottom:14px;">
+      <label style="flex:0 0 140px;">DATE OF BIRTH</label>
+      <select name="day" style="height:30px; border:0; padding:4px;">
+        <option>Day</option>
+        <!-- days 1-31 -->
+        <!-- (for brevity not listing all options; in real use add options 1..31) -->
+        <option>1</option><option>2</option><option>3</option>
+      </select>
+      <select name="month" style="height:30px; border:0; padding:4px;">
+        <option>Month</option>
+        <option>Jan</option><option>Feb</option><option>Mar</option>
+      </select>
+      <select name="year" style="height:30px; border:0; padding:4px;">
+        <option>Year</option>
+        <option>2005</option><option>2004</option><option>2003</option>
+      </select>
+    </div>
+
+    <!-- Email / Mobile -->
+    <div style="display:flex; gap:18px; margin-bottom:14px;">
+      <label style="flex:0 0 140px; line-height:36px;">EMAIL ID</label>
+      <input type="email" name="email" style="flex:1; height:30px; border:0; padding:6px; border-radius:3px;" />
+      <label style="flex:0 0 140px; line-height:36px; margin-left:10px;">MOBILE NUMBER</label>
+      <input type="tel" name="mobile" maxlength="10" placeholder="10 digit number" style="flex:1; height:30px; border:0; padding:6px; border-radius:3px;" />
+    </div>
+
+    <!-- Gender -->
+    <div style="display:flex; align-items:center; gap:12px; margin-bottom:14px;">
+      <label style="flex:0 0 140px;">GENDER</label>
+      <label style="line-height:20px;"><input type="radio" name="gender" value="male" /> Male</label>
+      <label style="line-height:20px; margin-left:10px;"><input type="radio" name="gender" value="female" /> Female</label>
+    </div>
+
+    <!-- Address -->
+    <div style="display:flex; gap:18px; margin-bottom:14px;">
+      <label style="flex:0 0 140px; align-self:flex-start;">ADDRESS</label>
+      <textarea name="address" rows="4" style="flex:1; resize:none; border:0; padding:8px; border-radius:3px;"></textarea>
+    </div>
+
+    <!-- City / Pin / State -->
+    <div style="display:flex; gap:18px; margin-bottom:14px;">
+      <label style="flex:0 0 140px; line-height:36px;">CITY</label>
+      <input type="text" name="city" maxlength="30" style="flex:1; height:30px; border:0; padding:6px; border-radius:3px;" />
+      <label style="flex:0 0 140px; line-height:36px; margin-left:10px;">PIN CODE</label>
+      <input type="text" name="pincode" maxlength="6" placeholder="6 digit" style="flex:1; height:30px; border:0; padding:6px; border-radius:3px;" />
+    </div>
+
+    <div style="display:flex; gap:18px; margin-bottom:14px;">
+      <label style="flex:0 0 140px; line-height:36px;">STATE</label>
+      <input type="text" name="state" maxlength="30" style="flex:1; height:30px; border:0; padding:6px; border-radius:3px;" />
+      <label style="flex:0 0 140px; line-height:36px; margin-left:10px;">COUNTRY</label>
+      <input type="text" name="country" value="India" style="flex:1; height:30px; border:0; padding:6px; border-radius:3px;" />
+    </div>
+
+    <!-- Hobbies -->
+    <div style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
+      <label style="flex:0 0 140px;">HOBBIES</label>
+      <label style="line-height:20px;"><input type="checkbox" name="hobby" value="drawing" /> Drawing</label>
+      <label style="line-height:20px; margin-left:6px;"><input type="checkbox" name="hobby" value="singing" /> Singing</label>
+      <label style="line-height:20px; margin-left:6px;"><input type="checkbox" name="hobby" value="dancing" /> Dancing</label>
+      <label style="line-height:20px; margin-left:6px;"><input type="checkbox" name="hobby" value="sketching" /> Sketching</label>
+      <label style="line-height:20px; margin-left:6px;">Others <input type="text" name="hobby_other" style="height:26px; border:0; padding:4px; border-radius:3px;" /></label>
+    </div>
+
+    <!-- Qualification table (simple layout) -->
+    <div style="margin-bottom:18px;">
+      <label style="display:block; margin-bottom:8px; flex:0 0 140px;">QUALIFICATION</label>
+      <table cellspacing="0" cellpadding="6" style="width:100%; border-collapse:collapse; background:rgba(255,255,255,0.06); color:#fff;">
+        <thead>
+          <tr>
+            <th style="text-align:left; width:8%;">Sl.No</th>
+            <th style="text-align:left; width:28%;">Examination</th>
+            <th style="text-align:left; width:28%;">Board</th>
+            <th style="text-align:left; width:18%;">Percentage</th>
+            <th style="text-align:left; width:18%;">Year of Passing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Class X</td>
+            <td><input type="text" name="board_x" maxlength="10" style="width:100%; border:0; padding:6px; border-radius:3px;" /></td>
+            <td><input type="number" step="0.01" name="perc_x" style="width:100%; border:0; padding:6px; border-radius:3px;" /></td>
+            <td><input type="text" name="year_x" style="width:100%; border:0; padding:6px; border-radius:3px;" /></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Class XII</td>
+            <td><input type="text" name="board_xii" maxlength="10" style="width:100%; border:0; padding:6px; border-radius:3px;" /></td>
+            <td><input type="number" step="0.01" name="perc_xii" style="width:100%; border:0; padding:6px; border-radius:3px;" /></td>
+            <td><input type="text" name="year_xii" style="width:100%; border:0; padding:6px; border-radius:3px;" /></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Graduation</td>
+            <td><input type="text" name="board_grad" maxlength="10" style="width:100%; border:0; padding:6px; border-radius:3px;" /></td>
+            <td><input type="number" step="0.01" name="perc_grad" style="width:100%; border:0; padding:6px; border-radius:3px;" /></td>
+            <td><input type="text" name="year_grad" style="width:100%; border:0; padding:6px; border-radius:3px;" /></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Masters</td>
+            <td><input type="text" name="board_mast" maxlength="10" style="width:100%; border:0; padding:6px; border-radius:3px;" /></td>
+            <td><input type="number" step="0.01" name="perc_mast" style="width:100%; border:0; padding:6px; border-radius:3px;" /></td>
+            <td><input type="text" name="year_mast" style="width:100%; border:0; padding:6px; border-radius:3px;" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Courses applied for -->
+    <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+      <label style="flex:0 0 140px;">COURSES APPLIED FOR</label>
+      <label><input type="radio" name="course" /> BCA</label>
+      <label style="margin-left:8px;"><input type="radio" name="course" /> B.Com</label>
+      <label style="margin-left:8px;"><input type="radio" name="course" /> B.Sc</label>
+      <label style="margin-left:8px;"><input type="radio" name="course" /> B.A</label>
+    </div>
+
+    <!-- Buttons -->
+    <div style="text-align:center;">
+      <input type="submit" value="Submit" style="padding:8px 16px; border:0; border-radius:4px; cursor:pointer; background:#fff; color:#6f47c8; font-weight:600; margin-right:8px;" />
+      <input type="reset" value="Reset" style="padding:8px 16px; border:0; border-radius:4px; cursor:pointer; background:#fff; color:#6f47c8; font-weight:600;" />
+    </div>
+
+  </form>
+</body>
+</html>
