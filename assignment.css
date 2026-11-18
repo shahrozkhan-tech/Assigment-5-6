@@ -1,0 +1,21 @@
+:root{--ink:#26352d;--muted:#718075;--paper:#f1f3ed;--surface:#fffefa;--line:#dce4da;--accent:#9a754f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{min-height:100vh;margin:0!important;padding:clamp(16px,5vw,50px)!important;background:radial-gradient(ellipse at 92% 5%,#e1e9db 0,transparent 28%),var(--paper)!important;color:var(--ink)!important;font-family:Georgia,"Times New Roman",serif!important;line-height:1.6}
+body>a,nav a{display:inline-flex;align-items:center;margin:0 5px 10px 0;padding:8px 12px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:#315d49;font:12px Arial,sans-serif;text-decoration:none}
+body>a:hover,nav a:hover,body>a:focus-visible,nav a:focus-visible{border-color:#73917b;color:#263b32;outline:none}
+nav{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:18px}
+h1,h2,h3{color:var(--ink);font-weight:500;letter-spacing:-.03em}
+h1{font-size:clamp(30px,5vw,52px);line-height:1.1}
+h2{font-size:clamp(22px,4vw,32px)}
+section,article,.container,form,body>div{max-width:1000px;margin:18px auto;padding:clamp(16px,3vw,30px);border:1px solid var(--line);border-radius:6px;background:var(--surface);box-shadow:0 14px 36px #26352d0a}
+p,li{color:#4b5a50}
+img{max-width:100%;height:auto;border-radius:4px}
+table{display:block;width:100%;max-width:100%;overflow-x:auto;border-collapse:collapse;border:1px solid #d6c6a9;background:var(--surface)}
+th,td{padding:10px 12px;border:1px solid #e3ddcf;text-align:left}
+th{background:#e8eee6;color:#263b32}
+fieldset{margin:16px 0;padding:20px;border:1px solid var(--line);border-radius:5px;background:#fbfcf8}
+legend{padding:0 8px;color:#557a60;font-weight:700}
+input,textarea,select{max-width:100%;padding:10px 12px;border:1px solid #cbd4ce;border-radius:3px;background:#fff;color:var(--ink);font:14px Arial,sans-serif}
+button{padding:10px 16px;border:1px solid #6c8b70;border-radius:3px;background:#6c8b70;color:#fff;font:700 12px Arial,sans-serif;cursor:pointer}
+@media(max-width:600px){table{font-size:12px}th,td{padding:8px}section,article,.container,form,body>div{margin:12px auto}}
